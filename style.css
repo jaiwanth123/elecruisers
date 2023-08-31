@@ -1,0 +1,601 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Phudu', cursive;
+  color: #edeff3;
+  background-color: black;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+/* navbar styling */
+nav{
+  
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  background-color: black;
+  
+}
+nav.sticky{
+  background: #4070f4;
+  padding: 13px 0;
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.logo1{
+  margin-right: 40px;
+}
+nav.sticky .navbar .logo a{
+  color: #fff;
+  
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 23px;
+  font-weight: 500;
+  
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: #2959e9;
+}
+nav.sticky .menu a{
+  color: #eceaf2;
+}
+nav.sticky .menu a:hover{
+  
+}
+.navbar .media-icons a{
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a{
+  color: #FFF;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+
+nav .menu-btn{
+  color: #4070f4;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+
+/* home section styling */
+.home{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+ background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  margin-top:70px;
+  margin-left: 100px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size: 25px;
+  color:  #2054e2;
+}
+.home .text-two{
+  color:  #2054e2;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color:  #2054e2;
+}
+.home .text-four{
+  font-size: 23px;
+  margin: 5px 0;
+
+}
+
+
+.home-image{
+    width:750px;
+    height: 400px;;
+    position: relative;
+    left:600px;
+    display: inline-block;
+    
+    
+}
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section{
+  padding-top: 40px;
+  background-color: black;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .vision-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-align:justify ;
+}
+section .title span{
+  
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vision .vision-details .left{
+  width: 45%;
+
+}
+.vision .left img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 50px;
+}
+.vison-para{
+  font-size:20px;
+  text-align: justify;
+}
+.vision{
+  display: flex;
+  justify-content:space-around;
+}
+
+
+section  .topic{
+  
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  
+   
+
+  
+}
+.vision-para{
+    text-align:justify
+}
+
+        
+    
+
+
+ /* My Skills CSS */
+ .about-srm{
+   background: #F0F8FF;
+   font-size: 20px;
+   background-color: black;
+ }
+ .about-srm .content{
+   padding: 40px 0;
+ }
+ .about-srm .srm-details{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .srm-details.text{
+   width: 50%;
+ }
+ .srm-details p{
+   
+   text-align: justify;
+ }
+.about-srm .srm-details .experience{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.srm-details .experience .num{
+  
+  font-size: 80px;
+}
+.srm-details .experience .exp{
+  
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+.srm-details .boxes{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left:50px;
+}
+.srm-details .box{
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+.srm-details .boxes .topic{
+  font-size: 20px;
+  color: #4070f4;
+}
+.srm-details .boxes .per{
+  font-size: 60px;
+  color: #4070f4;
+}
+
+/* My Services CSS */
+.services .boxes{
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .boxes .box{
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+  background: #4070f4;
+  color: #fff;
+}
+.services .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+  background-color: #fff;
+  color: #4070f4;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  
+  transition: all 0.4s ease;
+}
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+  color: #fff;
+}
+.careers{
+  margin-left: 100px;
+  font-size: 22px;
+  display:flex;
+  flex-direction: column;
+  gap:40px;
+  margin-bottom: 48px;
+}
+.openings{
+  width:150px;
+  border-style: solid;
+  border-color: white;
+  height:40px;
+  border-radius:10px ;
+
+
+}
+.openings:hover{
+  background-color: white;
+  color: black;
+}
+.careers-ul1{
+  width:170px;
+  
+}
+.careers-ul2{
+  width:70px;
+  
+  
+}
+.contact{
+  
+  font-size:21px;
+  background-color: black;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.socials{
+  margin-top:100px;
+  margin-bottom: 50px;
+  
+  
+
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:75px;
+}
+.subscribe{
+ margin-top: 150px;
+  margin-left: 1000px;
+ display: flex;
+  flex-direction: column;
+  gap:56px;
+  font-size: 20px;
+  color: #3967e5;
+}
+input
+{
+  font-size: 15px;
+  width:300px;
+  height: 40px;
+}
+
+/* Footer CSS */
+footer{
+  background: #4070f4;
+  padding: 15px 0;
+  
+  
+  margin-top: 100px;
+}
+
+
+
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+.logo1{
+    width:170px;
+    height:130px;
+    background-color: white;
+    
+}
+.srm{
+    width:500px;
+    height:130px;
+    background-color:white;
+    
+}
+
+
+.grid-container {
+  margin-top: 200px;
+  
+  columns: 5 200px;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;}
+  .photo {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;}
+   
+    
+    p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+    }
+    .grid-item{
+      max-width: 600px;
+      max-height: 300px;
+    }
+
+    
+  
+
+
+
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .vision .vision-para{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .vison.about-para.left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .vision-para .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .vision .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #4070f4;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .about-srm .srm-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .srm-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .srm-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .srm-details .boxes .per{
+    font-size: 50px;
+    color: #4070f4;
+  }
+}
